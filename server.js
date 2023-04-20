@@ -20,4 +20,4 @@ app.get('/', (req, res) => {
 app.use('/auth', require('./routes/user'));
 app.use("/text", require("./routes/Text"))
 
-app.listen(8000, () => console.log('Server listening on port 8000'));
+app.listen(5000, () => console.log('Server listening on port 5000'));
