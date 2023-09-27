@@ -1,7 +1,6 @@
 const TextQuery = require('../schemas/TextQuery');
 
 const router = require('express').Router();
-
 router.post("/add-text", async (req, res) => {
     try {
         const doc = new TextQuery({
@@ -10,7 +9,7 @@ router.post("/add-text", async (req, res) => {
         })
         await doc.save()
         res.json({
-            message: "Save to db"
+            message: "Saved to database"
         })
     } catch (error) {
         console.log(error)

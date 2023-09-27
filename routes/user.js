@@ -30,7 +30,6 @@ router.post('/signup', async (req, res) => {
         console.log(error);
     }
 });
-
 router.post('/login', async (req, res) => {
     try {
         //find if user already exists
